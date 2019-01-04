@@ -1,0 +1,125 @@
+/** custom helper classes **/
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.flex-auto {
+  flex: auto;
+}
+/** inherited bootstrap vars and classes**/
+
+.head-1 {
+  @extend h1;
+}
+
+.head-2 {
+  @extend h2;
+}
+
+.head-3 {
+  @extend h3;
+}
+
+.head-4 {
+  @extend h4;
+}
+
+.head-5 {
+  @extend h5;
+}
+
+.rounded-top-lg {
+  border-top-left-radius: $border-radius-lg !important;
+  border-top-right-radius: $border-radius-lg !important;
+}
+
+.rounded-bottom-lg {
+  border-bottom-left-radius: $border-radius-lg !important;
+  border-bottom-right-radius: $border-radius-lg !important;
+}
+
+.rounded-lg {
+  border-radius: $border-radius-lg !important;
+}
+
+.rounded-sm {
+  border-radius: $border-radius-sm !important;
+}
+
+
+.font-weight-light {
+  font-weight: $font-weight-light;
+}
+
+.font-weight-normal {
+  font-weight: $font-weight-normal;
+}
+
+/*.font-weight-md {
+  font-weight: $font-weight-md;
+}*/
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
+/*
+.font-weight-xl {
+  font-weight: $font-weight-xl;
+}
+*/
+
+
+/*.font-xs {
+
+  font-size: $font-size-xs;
+}*/
+
+.font-sm {
+
+  font-size: $font-size-sm;
+}
+
+.font-normal {
+
+  font-size: $font-size-base !important;
+}
+
+/*
+.font-md {
+
+  font-size: $font-size-md !important;
+}
+*/
+
+.font-lg {
+
+  font-size: $font-size-lg;
+}
+
+.font-xl {
+
+  font-size: $font-size-xl;
+}
+
+
+.lead-inner {
+  p {
+    @extend .lead;
+  }
+}

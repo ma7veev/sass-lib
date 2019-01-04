@@ -1,0 +1,11 @@
+@mixin name-property( $name, $property) {
+  .#{$name}-#{$property} {
+    #{$name}: #{$property};
+  }
+}
+
+@mixin bg-img($name, $type:"jpg") {
+  .bg-img-#{$name} {
+    background-image: url("/images/#{$name}.#{$type}");
+  }
+}

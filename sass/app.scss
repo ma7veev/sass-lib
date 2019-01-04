@@ -1,0 +1,47 @@
+
+/*import font library*/
+//@import "/public/libs/css/font-awesome-4.7.0.min.css";
+
+// Fonts
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "KelsonSans";
+  // адрес шрифта и тип
+  src: url("/public/fonts/KelsonSansLight/KelsonSansLight.woff") format("woff");
+  src: url("/public/fonts/KelsonSansLight/KelsonSansLight.ttf") format("truetype");
+  // src: url("/public/fonts/KelsonSansLight/KelsonSansLight.eot");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "KelsonSans";
+  // адрес шрифта и тип
+  src: url("/public/fonts/KelsonSansRegular/KelsonSansRegular.woff") format("woff");
+  src: url("/public/fonts/KelsonSansRegular/KelsonSansRegular.ttf") format("truetype");
+  // src: url("/public/fonts/KelsonSansLight/KelsonSansLight.eot");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "KelsonSans";
+  // адрес шрифта и тип
+  src: url("/public/fonts/KelsonSansBold/KelsonSansBold.woff") format("woff");
+  src: url("/public/fonts/KelsonSansBold/KelsonSansBold.ttf") format("truetype");
+  // src: url("/public/fonts/KelsonSansLight/KelsonSansLight.eot");
+  font-style: normal;
+  font-weight: 800;
+}
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+@import "app/mixins";
+//@import "app/vars", "app/mixins", "app/blocks", "app/elements", "app/modificators", "app/fix";
+@include bg-img("name", "png");
+@include name-property("overflow", "visible");
+
