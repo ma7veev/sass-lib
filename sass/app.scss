@@ -41,7 +41,7 @@
 
 
 @import "app/mixins";
-//@import "app/vars", "app/mixins", "app/blocks", "app/elements", "app/modificators", "app/fix";
+//@import "app/vars", "app/mixins", "app/blocks", "app/elements", "app/modificators", "app/fix";, "app/_bootstrap";
 @include bg-img("name", "png");
 @include name-property("overflow", "visible");
 

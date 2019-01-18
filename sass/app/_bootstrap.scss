@@ -1,0 +1,19 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .flex#{$infix}-basis {
+
+      @each $base, $bas in $basis {
+
+        &-#{$base} {
+          flex-basis: $bas;
+        }
+      }
+    }
+  }
+}
+@each $prop, $abbrev in (bottom: position-bottom, top: position-top, left: position-left, right: position-right) {
+  @each $size, $length in $sizes {
+    .#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}
